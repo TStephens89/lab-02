@@ -4,21 +4,25 @@ let name = prompt("What is your name?");
 console.log("Users name is " + name);
 alert("Oh Hello " + name);
 
-let myAge = prompt("Do you think I am 33?");
-if (myAge === "yes" || myAge === "Yes" || myAge === "Y" || myAge === "y") {
-    console.log("Wow, " + name + " you are correct!")
-    alert("Wow, " + name + " you are correct!")
+function QandA(){
+    let myAge = prompt("Do you think I am 33?");
     if (myAge === "yes" || myAge === "Yes" || myAge === "Y" || myAge === "y") {
-        rightAnswers++
+        console.log("Wow, " + name + " you are correct!")
+        alert("Wow, " + name + " you are correct!")
+        if (myAge === "yes" || myAge === "Yes" || myAge === "Y" || myAge === "y") {
+            rightAnswers++
+        }
     }
+    else {
+        myAge === "no" || myAge === "No" || myAge === "N" || myAge === "n"
+        console.log("Sorry " + name + " I actually am 33")
+        alert("Sorry " + name + " I actually am 33")
+    };
 }
-else {
-    myAge === "no" || myAge === "No" || myAge === "N" || myAge === "n"
-    console.log("Sorry " + name + " I actually am 33")
-    alert("Sorry " + name + " I actually am 33")
-};
 
-let myLocation = prompt("Do you think I am in San Diego?");
+QandA();
+
+/*let myLocation = prompt("Do you think I am in San Diego?");
 if (myLocation === "yes" || myLocation === "Yes" || myLocation === "Y" || myLocation === "y") {
     console.log("Wow, " + name + "you are correct!")
     alert("Wow, " + name + " you are correct!")
@@ -111,4 +115,4 @@ while (attempts > 0) {
     if (!correctAnswer) { alert("please try again") }
 
 }
-alert("you got " + rightAnswers + " right answers")
+alert("you got " + rightAnswers + " right answers")*/
